@@ -75,13 +75,31 @@ $
 
 ### AWS CLI Installation
 
-https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+[Getting started install](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+AWS cli is installed for this project at start up using the bash script
 
 [`./bin/install_aws_cli.sh`](./bin/install_aws_cli.sh)
 
-- Check if AWS Credentials is configured
+- Check if AWS Credentials is configured by running the AWS cli command
 ```sh
 $ aws sts get-caller-identity
+```
+
+Set AWS CLI envs
+[reference the link on how to set and env](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
+`export PROJECT_ROOT='/workspace/terraform-beginner-bootcamp-2023'`
+example
+```
+export AWS_ACCESS_KEY_ID='AKIAIOSFODNN7EXAMPLE'
+export AWS_SECRET_ACCESS_KEY='wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY'
+export AWS_DEFAULT_REGION='us-west-2'
+```
+set on gp
+```
+gp env AWS_ACCESS_KEY_ID='AKIAIOSFODNN7EXAMPLE'
+gp env AWS_SECRET_ACCESS_KEY='wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY'
+gp env  AWS_DEFAULT_REGION='us-west-2'
 ```
 
 
