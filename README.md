@@ -103,11 +103,15 @@ gp env  AWS_DEFAULT_REGION='us-west-2'
 ```
 
 
-## Terraform - AWS CLI
+## Terraform Basic actions- AWS CLI
 #### Environment variables to configure the AWS CLI
 https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html
 ## Terraform Registry Provider
+- Terraform sources their providers and modules from the terraform registory which located at terraform
 https://registry.terraform.io/browse/providers
+- **Providers** is an interface to APIs that will allow you to creat resources in terraform.
+- **Modules** are a way to make large amount of terraform code modulars, portable and sharable.
+
 ## Terraform Output
 https://developer.hashicorp.com/terraform/language/values/outputs
 ### Random Provider
